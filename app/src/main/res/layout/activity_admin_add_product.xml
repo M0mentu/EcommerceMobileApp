@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminAddProduct">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_marginTop="22dp"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:cropToPadding="false"
+        android:src="@drawable/imageholder"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/editTextProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/greengradientstyle"
+        android:hint="Enter product name"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_below="@+id/productImage"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+
+        />
+    <EditText
+        android:id="@+id/editTextProductDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/greengradientstyle"
+        android:hint="Enter product description"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_below="@+id/editTextProductName"
+        />
+    <EditText
+        android:id="@+id/editTextProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/greengradientstyle"
+        android:hint="Enter product price"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_below="@+id/editTextProductDescription"
+        />
+    <EditText
+        android:id="@+id/editTextProductQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/greengradientstyle"
+        android:hint="Enter product quantity"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_below="@+id/editTextProductPrice"
+        />
+
+    <Button
+        android:id="@+id/addProductButton"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextProductQuantity"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/buttongreengradient"
+        android:gravity="center"
+        android:text="Add product"
+
+
+        />
+
+</RelativeLayout>

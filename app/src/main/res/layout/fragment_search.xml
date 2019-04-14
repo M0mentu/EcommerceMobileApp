@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search here"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/searchbarEditText"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_toStartOf="@+id/searchVoiceImageView"
+        android:layout_toLeftOf="@+id/searchVoiceImageView"
+        android:background="@drawable/searchbar"
+        android:hint="Enter item name here"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp" />
+
+    <ImageView
+        android:id="@+id/searchImageView"
+        android:layout_width="51dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:src="@drawable/ic_search" />
+
+    <ImageView
+        android:id="@+id/searchVoiceImageView"
+        android:layout_width="51dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_toStartOf="@+id/searchImageView"
+        android:layout_toLeftOf="@+id/searchImageView"
+        android:src="@drawable/ic_microphone" />
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="84dp" />
+"
+        android:layout_below="@+id/searchVoiceImageView"
+        android:layout_alignParentStart="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="427dp"
+        android:layout_below="@+id/surfaceview"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="84dp"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/holo_red_light"
+    android:id="@+id/gaminglayout"
+    >
+
+>
+
+
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gaming Fragment"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_centerInParent="true"/>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_gaming"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

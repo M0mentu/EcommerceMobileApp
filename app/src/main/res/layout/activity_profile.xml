@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackGroundColor"
+
+    tools:context=".profileActivity"
+    tools:layout_editor_absoluteY="73dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout22"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/profileimageTest"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    app:civ_border_color="#EEEEEE"
+                    app:civ_border_width="4dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_color="#8BC34A"
+                    app:civ_shadow_radius="10" />
+                <!--<ImageView
+                     android:id="@+id/profileimage"
+                     android:layout_width="138dp"
+                     android:layout_height="146dp"
+                     app:layout_constraintEnd_toEndOf="parent"
+                     app:layout_constraintStart_toStartOf="parent"
+                     tools:layout_editor_absoluteY="2dp"
+                     tools:src="@tools:sample/avatars[10]"
+                     android:layout_gravity="center"/>-->
+                <TextView
+                    android:id="@+id/usernameProfileText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loading data..."
+
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/Titnt"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="390dp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="141dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    tools:layout_editor_absoluteX="123dp"
+                    tools:layout_editor_absoluteY="136dp"
+                    tools:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/profilePicImage"
+                    android:layout_width="171dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:background="@color/Titnt"
+
+                    android:text="Select profile picture"
+                    android:textColor="@android:color/black"
+                    tools:layout_editor_absoluteX="109dp"
+                    tools:layout_editor_absoluteY="163dp" />
+
+                <Button
+                    android:id="@+id/profilePicImage2"
+                    android:layout_width="171dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+
+                    android:layout_margin="5dp"
+                    android:background="@color/Titnt"
+                    android:text="uplaod image"
+                    android:textColor="@android:color/black"
+                    tools:layout_editor_absoluteX="111dp"
+                    tools:layout_editor_absoluteY="204dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/goToShopBTN"
+                        android:layout_width="155dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="@drawable/searchbar"
+                        android:text="Shop now"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/profielgotocart"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="155dp"
+                        android:layout_marginRight="155dp"
+                        android:layout_toEndOf="@+id/goToShopBTN"
+                        android:layout_toRightOf="@+id/goToShopBTN"
+                        android:background="@drawable/ic_shopping_cart" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/goToAdminCenter"
+                    android:layout_width="171dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+
+                    android:layout_margin="5dp"
+                    android:background="@color/colorAccent"
+                    android:text="Add Item"
+                    android:textColor="@android:color/black"
+                    android:visibility="gone"
+                    tools:layout_editor_absoluteX="111dp"
+                    tools:layout_editor_absoluteY="204dp" />
+
+
+                <TextView
+                    android:id="@+id/addressProfileText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Loading data..."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/Titnt"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="461dp" />
+
+
+                <View
+                    android:id="@+id/divider68"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:id="@+id/genderProfileText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:text="Loading data..."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/Titnt"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="390dp" />
+
+                <View
+                    android:id="@+id/divider78"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:id="@+id/nameProfileText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Loading data..."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/Titnt"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="433dp" />
+
+                <View
+                    android:id="@+id/divider98"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:id="@+id/phoneProfileText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Loading data..."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/Titnt"
+                    tools:layout_editor_absoluteX="30dp"
+                    tools:layout_editor_absoluteY="267dp" />
+
+                <View
+                    android:id="@+id/divider88"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:id="@+id/userEmail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Loading data..."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/Titnt"
+                    tools:layout_editor_absoluteX="135dp"
+                    tools:layout_editor_absoluteY="402dp" />
+
+                <View
+                    android:id="@+id/divider28"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:id="@+id/dateProfielText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="Loading data..."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/Titnt"
+                    tools:layout_editor_absoluteX="84dp"
+                    tools:layout_editor_absoluteY="433dp" />
+
+                <View
+                    android:id="@+id/divider18"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <Button
+                    android:id="@+id/logOutButton"
+                    android:layout_width="171dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorAccent"
+                    android:text="Logout"
+                    android:textColor="@android:color/black"
+                    tools:layout_editor_absoluteX="107dp"
+                    tools:layout_editor_absoluteY="421dp" />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

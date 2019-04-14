@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:background="@color/Titnt"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/headerProfilePic"
+        android:layout_width="91dp"
+        android:layout_height="91dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        android:textAlignment="center"
+        app:civ_border="true"
+        app:civ_border_color="@color/BackGroundColor"
+        app:civ_border_width="3dp"
+
+        />
+    <TextView
+        android:id="@+id/usernameShopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="Browse Categories"
+        android:textColor="@color/white"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+</LinearLayout>

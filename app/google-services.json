@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "461828555476",
+    "firebase_url": "https://ecommercemobileapp-7666a.firebaseio.com",
+    "project_id": "ecommercemobileapp-7666a",
+    "storage_bucket": "ecommercemobileapp-7666a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461828555476:android:fde927fbd93da23a",
+        "android_client_info": {
+          "package_name": "com.example.momentu.ecommercemobileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461828555476-p7puvlckijdci0nu7gl6fvhqc73jd7p8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.momentu.ecommercemobileapp",
+            "certificate_hash": "af47259757a34598a523f0f4bfdc70790781bf84"
+          }
+        },
+        {
+          "client_id": "461828555476-mt2uhl74cseodvorpojp70s5j3kfbm0i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnQXnnvfOT6HdLH-L7Gyp5se83xxUJMHA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461828555476-mt2uhl74cseodvorpojp70s5j3kfbm0i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="471dp"
+        android:weightSum="1">
+
+
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:textSize="22dp"
+        android:textAlignment="center"
+        android:text="Add Item"
+        android:layout_margin="15dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/adminCatGaming"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_gaming"
+                />
+            <ImageView
+                android:id="@+id/adminCatFashion"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_fashion"
+                />
+            <ImageView
+                android:id="@+id/adminCatMobileandTablets"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_mobileandtablets"
+                />
+
+            <ImageView
+                android:id="@+id/adminCatElectronics"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_plug" />
+
+
+        </LinearLayout>
+        <View  android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/charytyty"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_chart"
+            android:layout_gravity="center"
+            android:layout_marginBottom="250dp"/>
+        <Button
+            android:id="@+id/adminLogoutBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Logout" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

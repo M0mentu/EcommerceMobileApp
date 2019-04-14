@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackGroundColor"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="181dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/loginEmail"
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittexstyle"
+            android:gravity="center"
+            android:hint="Enter Email"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/loginPassword"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittexstyle"
+            android:gravity="center"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColorHint="@color/white" />
+
+        <Button
+
+            android:id="@+id/loginBTN"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Titnt"
+            android:text="Login"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+        <CheckBox
+            android:id="@+id/RembmerMeCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remember me?"
+            android:textColor="@color/MainColor"
+            android:outlineAmbientShadowColor="@color/Titnt"
+            android:checked="true"
+            android:outlineSpotShadowColor="@color/Titnt"
+            android:shadowColor="@color/white"
+
+            />
+        <TextView
+            android:id="@+id/textSigup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not registered? login here"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/resetView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot password ?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
